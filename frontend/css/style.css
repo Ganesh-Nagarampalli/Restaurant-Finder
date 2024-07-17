@@ -6,12 +6,17 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure header stays above other content */
 }
 
 header .logo {
@@ -38,10 +43,12 @@ header nav .login-btn {
 .main-container {
     display: flex;
     padding: 20px;
+    margin-top: 80px;
 }
 
 .sidebar {
-    width: 25%;
+    position: fixed;
+    width: 22%;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -68,12 +75,21 @@ header nav .login-btn {
 }
 
 .content {
-    width: 75%;
+    margin-left: 25%; /* Adjust margin to prevent overlap with sidebar */
+    padding: 20px;
+    background-color: #f0f0f0; /* Ensure background extends behind sidebar */
+    overflow: hidden; /* Prevent content from flowing under sidebar */
 }
 
 .search-bar {
+    /* position: fixed; */
+    top: 80px; /* Adjust top value to position below the fixed header */
+    left: 22%; /* Adjust left value to match sidebar width */
+    width: 100%; /* Adjust width to match content width */
     display: flex;
-    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    z-index: 999; /* Ensure search bar stays above content */
 }
 
 .search-bar input {
@@ -135,7 +151,7 @@ header nav .login-btn {
     color: #777;
 }
 
-.view-menu-btn {
+.view-details {
     padding: 10px 20px;
     background-color: #e74c3c;
     color: white;
