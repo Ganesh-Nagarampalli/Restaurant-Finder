@@ -1,13 +1,15 @@
+require('dotenv').config();
 // Importing mysql and csvtojson packages 
 const csvtojson = require('csvtojson'); 
 const mysql = require("mysql2"); 
 const path = require('path');
-require('dotenv').config();
 
 // Database credentials 
 const hostname = "localhost", 
     username = "root", 
-    password = "54459";
+    password = process.env.databasePassword;
+
+console.log(password);
     
 
 // Establish connection to the MySQL server 
@@ -81,7 +83,9 @@ con.connect((err) => {
 
                     // Load CSV data and insert into the table
                     csvtojson().fromFile(fileName).then(source => {
+                        
                         source.forEach(row => {
+                            
                             var insertStatement = `
                                 INSERT INTO restaurants (
                                     RestaurantID, RestaurantName, CountryCode, City, Address,
@@ -105,6 +109,7 @@ con.connect((err) => {
                                     console.error('Unable to insert row: ', err.message);
                                 }
                             });
+                            
                            
                         });
                         console.log("All items stored into 'restaurants' table successfully");
