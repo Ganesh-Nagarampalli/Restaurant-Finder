@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+header nav .login-btn {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #e74c3c;
+}
+
+.content {
+    width: 75%;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-bar .search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* space between rows */
+    padding-right: 20px;
+}
+
+.restaurant-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Make it take the full width */
+    padding: 10px;
+}
+
+.restaurant-box img {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    object-fit: cover;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.restaurant-info {
+    flex: 1; /* Take remaining space */
+    padding: 20px 0;
+    text-align: left; /* Align text to the left */
+}
+
+
+.restaurant-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.restaurant-info p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.view-menu-btn {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
