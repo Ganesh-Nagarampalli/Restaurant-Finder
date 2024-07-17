@@ -32,7 +32,7 @@ header nav a {
 }
 
 header nav .login-btn {
-    padding: 10px 20px;
+    padding: 10px 40px;
     background-color: #e74c3c;
     color: white;
     border: none;
@@ -82,10 +82,10 @@ header nav .login-btn {
 }
 
 .search-bar {
-    /* position: fixed; */
+    position: fixed;
     top: 80px; /* Adjust top value to position below the fixed header */
     left: 22%; /* Adjust left value to match sidebar width */
-    width: 100%; /* Adjust width to match content width */
+    width: 50%; /* Adjust width to match content width */
     display: flex;
     background-color: white;
     padding: 10px;
@@ -114,6 +114,7 @@ header nav .login-btn {
     flex-direction: column;
     gap: 20px; /* space between rows */
     padding-right: 20px;
+    margin-top: 50px;
 }
 
 .restaurant-box {
@@ -186,11 +187,11 @@ header nav .login-btn {
     position: relative;
 }
 
-.close-button {
+.close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 20px;
+    font-size: 40px;
     cursor: pointer;
 }
 

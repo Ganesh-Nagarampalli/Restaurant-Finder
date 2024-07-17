@@ -74,13 +74,16 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
     function displayRestaurantDetails(details) {
+
         modalContent.innerHTML = `
             <span class="close-btn">&times;</span>
             <h2>${details.RestaurantName}</h2>
-            <p>Cuisine: ${details.Cuisines}</p>
-            <p>Average Cost for Two: $${details.AverageCostForTwo}</p>
-            <p>Address: ${details.Address}</p>
-            <p>City: ${details.City}</p>
+            <p><strong>Cuisine:</strong> ${details.Cuisines}</p>
+            <p><strong>Average Cost for Two:</strong> $${details.AverageCostForTwo}</p>
+            <p><strong>Online Delivery:</strong> ${details.HasOnlineDelivery}</p>
+            <p><strong>City:</strong> ${details.City}</p>
+            <p><strong>Address:</strong> ${details.Address}</p>
+            
 
         `;
         modal.style.display = 'flex'; // Ensure modal is displayed using flex

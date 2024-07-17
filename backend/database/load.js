@@ -9,9 +9,6 @@ const hostname = process.env.dbHost,
     username = process.env.dbUser, 
     password = process.env.dbPassword;
 
-
-    
-
 // Establish connection to the MySQL server 
 let con = mysql.createConnection({ 
     host: hostname, 
