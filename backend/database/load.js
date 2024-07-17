@@ -5,11 +5,11 @@ const mysql = require("mysql2");
 const path = require('path');
 
 // Database credentials 
-const hostname = "localhost", 
-    username = "root", 
-    password = process.env.databasePassword;
+const hostname = process.env.dbHost, 
+    username = process.env.dbUser, 
+    password = process.env.dbPassword;
 
-console.log(password);
+
     
 
 // Establish connection to the MySQL server 
