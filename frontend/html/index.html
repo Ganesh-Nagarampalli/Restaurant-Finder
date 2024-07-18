@@ -17,31 +17,45 @@
     </header>
     <div class="main-container">
         
-            <!-- <aside class="sidebar">
+            <aside class="sidebar">
                 <div class="filter-section">
-                    <h3>All Cuisines A-Z</h3>
-                    <ul>
-                        <li><input type="checkbox" /> Indian</li>
-                        <li><input type="checkbox" /> French</li>
-                        <li><input type="checkbox" /> Chinese</li>
-                        <li><input type="checkbox" /> Japanese</li>
-                        <li><input type="checkbox" /> Desserts</li>
-                        <li><input type="checkbox" /> Sushi</li>
-                        <li><input type="checkbox" /> Filipino</li>
-                        <li><input type="checkbox" /> Seafood</li>
-                        <li><input type="checkbox" /> Asian</li>
-                        <li><input type="checkbox" /> Korean</li>
-                        <li><input type="checkbox" /> Mexican</li>
-                        <li><input type="checkbox" /> Arabian</li>
-                        <li><a href="#">+ MORE</a></li>
-                    </ul>
+                    <h3>Filters</h3>
+                    <div>
+                        <label for="countrySelect">Country:</label>
+                        <select id="selectCountry">
+                            <option value="0">Select Country</option>
+                            <option value="1">India</option>
+                            <option value="14">Australia</option>
+                            <option value="30">Brazil</option>
+                            <option value="37">Canada</option> 
+                            <option value="94">Indonesia</option>
+                            <option value="148">New Zealand</option>
+                            <option value="162">Phillipines</option>
+                            <option value="166">Qatar</option>
+                            <option value="184">Singapore</option>
+                            <option value="189">South Africa</option>
+                            <option value="191">Sri Lanka</option>
+                            <option value="208">Turkey</option>
+                            <option value="214">UAE</option>
+                            <option value="215">United Kingdom</option>
+                            <option value="216">United States</option>
+
+                        </select>
+
+                    </div>
+                    <br>
+                    <div>
+                        <button id = "random">Random</button>
+                    </div>
+                    
                 </div>
-            </aside> -->
+                
+            </aside>
         
         <div class="content">
             <div class="search-bar">
-                <input type="text" placeholder="Search for a dish or Restaurant" />
-                <button class="search-btn">Search</button>
+                <input type="text" id ="searchBar" placeholder="Search for a dish or Restaurant" />
+                <button class="search-btn" id ="searchBtn">Search</button>
             </div>
             <div class="restaurant-list">
                 
